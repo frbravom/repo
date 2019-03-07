@@ -1,3 +1,6 @@
+<?php
+include 'operaciones.php';
+?>
 <!DOCTYPE html>
 <!--
 To change this license header, choose License Headers in Project Properties.
@@ -10,6 +13,10 @@ and open the template in the editor.
         <title></title>
     </head>
     <body>
+        <?php
+        include 'html.php';
+        ?>
+
         Texto sin programacion
         <br>
         <?php
@@ -31,14 +38,14 @@ and open the template in the editor.
         $meses["octubre"] = "primavera";
         $meses["noviembre"] = "primavera";
         $meses["diciembre"] = "primavera/verano";
-/*
-        foreach ($meses as $mes) {
-            echo $mes;
-            echo "<br>";
-        }
-  */      
+        /*
+          foreach ($meses as $mes) {
+          echo $mes;
+          echo "<br>";
+          }
+         */
         foreach ($meses as $mes => $value) {
-            echo $mes."= estacion: ";
+            echo $mes . "= estacion: ";
             echo $value;
             echo "<br>";
         }
